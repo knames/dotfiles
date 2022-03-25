@@ -1,1 +1,14 @@
 # Add your preferred git settings here. This will overwrite anything in `core/configs/.gitconfig`.
+[user]
+    name = Ken Slawinski
+    email = ken.slawinski@shopify.com
+    username = knames
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    st = status

@@ -30,7 +30,7 @@
 
   # Forcepush, but fail if the remote has been updated since you last pulled.
   # Prevents clobbering other people's commits on the same branch unless you really, really want to.
-  forcepush = push --force-with-lease
+  	forcepush = push --force-with-lease
 	co = checkout
 	br = branch
 	ci = commit

@@ -1,0 +1,21 @@
+# Created by newuser for 5.9
+#
+export SPACESHIP_CONFIG="/home/ken/.config/spaceship/spaceshiprc.zsh"
+
+
+alias vhyper="vim ~/.config/hypr/hyprland.conf"
+alias up="source ~/.zshrc"
+source /usr/lib/spaceship-prompt/spaceship.zsh
+
+
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval $(dbus-launch --sh-syntax)
+fi
+# Start gnome-keyring-daemon and set environment variables if not already running
+if ! pgrep -f gnome-keyring-daemon > /dev/null; then
+    eval $(gnome-keyring-daemon --start --components=secrets,pkcs11,ssh)
+fi
+source ~/.spaceship-ember/spaceship-ember.plugin.zsh
+source ~/.spaceship-vi-mode/spaceship-vi-mode.plugin.zsh
+
+# test
